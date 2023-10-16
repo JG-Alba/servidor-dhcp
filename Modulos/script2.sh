@@ -69,3 +69,11 @@ iface enp0s3 inet static
         gateway 172.26.255.255
 
 EOF'
+
+# Reiniciar servicios de Networking y ISC-DHCP-SERVER
+
+systemctl restart networking
+systemctl restart isc-dhcp-server
+
+#FIN
+echo "Se han realizado todas las tareas y el servidor ha sido configurado"
