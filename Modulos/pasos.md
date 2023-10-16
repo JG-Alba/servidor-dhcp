@@ -41,9 +41,11 @@ Sudo apt-get install isc-dhcp-server
 A partir de aqui ya estan configurados ambos servidores, el principal y failover. Realizaremos comprobaciones.
 
 1-. Levantamos las tarjetas con "ifup 'tarjeta'"
+
 2-. Reseteamos los sistemas
     - systemctl restart networking.service
     - systemctl restart isc-shcp-server.service
+    
 3-. Realizamos una comprobacion de los servidores para ver si al caerse el principal el failover toma su lugar, 
     esto apagando el servicio. En el failover hacermos un "Journalctl -f" para ver si toma el control. 
     Si actua esta bien configurado
