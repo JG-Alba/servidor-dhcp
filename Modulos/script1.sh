@@ -68,7 +68,7 @@ iface enp0s3 inet static
         network 172.26.0.0
         netmask 255.255.0.0
         broadcast 172.26.255.255
-        gateway 172.26.255.255
+        gateway 172.26.0.1
 
 EOF'
 
